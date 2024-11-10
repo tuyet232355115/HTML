@@ -32,7 +32,7 @@ hr {
 
 /* home */
 .header {
-    background-image: url('/asset/img/bg/z6013237802932_0a8eecd7f97ca2f09b9e8423611adc8d.jpg');
+    background-image: url('../img/bg/z6013237802932_0a8eecd7f97ca2f09b9e8423611adc8d.jpg');
     background-repeat: no-repeat;
     /* Ngăn lặp hình ảnh */
     background-size: cover;
