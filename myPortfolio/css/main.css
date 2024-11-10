@@ -1,0 +1,131 @@
+*{
+  box-sizing: border-box;
+  background: #FFFFEB;
+
+}
+.Frame1{ 
+  position: relative; 
+  background: #FFFFEB;
+}
+.Name{
+  width: 317px; 
+  height: 113px; 
+  left: 547px; 
+  top: 494px; 
+  position: absolute; 
+  color: black; 
+  font-size: 24px; 
+  font-family: Tahoma; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+.AboutMe1{
+  left: 381px; 
+  top: 965px; 
+  position: absolute; 
+  color: #FFAE00; 
+  font-size: 36px; 
+  font-family: arial; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+.Port{
+  width: 300px; 
+  left: 687px; 
+  top: 56px; 
+  position: absolute; 
+  text-align: center; 
+  color: #6F6F6F; 
+  font-size: 80px; 
+  font-family: arial; 
+  font-weight: 700; 
+  letter-spacing: 16px; 
+  word-wrap: break-word;
+}
+.Group1{
+  width: 351px; 
+  height: 337px; 
+  left: 125px; 
+  top: 382px; 
+  position: absolute;
+}
+.Ellipse1{
+  width: 351px; 
+  height: 337px; 
+  left: 0px; 
+  top: 0px; 
+  position: absolute; 
+  background: white; 
+  border-radius: 9999px; 
+  border: 3px #74DCEB solid;
+}
+.hinh{
+  width: 512px; 
+  height: 345px; 
+  left: -92px; 
+  top: -14px; 
+  position: absolute;
+}
+.Frame2{ 
+  left: 960px; 
+  top: 0px; 
+  position: absolute; 
+  background: #E0E0E0;
+}
+.AboutMe{
+  left: 366px; 
+  top: 201px; 
+  position: absolute; 
+  color: #FFAE00; 
+  font-size: 50px; 
+  font-family: Arial; 
+  font-weight: 700; 
+  word-wrap: break-word;
+  width: 300px;
+}
+.gioithieu{
+  width: 732px; 
+  height: 460px; 
+  left: 133px; 
+  top: 320px; 
+  position: absolute; 
+  text-align: center; 
+  color: black; 
+  font-size: 36px; 
+  font-family: Arial; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+.Folio{
+  width: 340px; 
+  left: 0px; 
+  top: 56px; 
+  position: absolute; 
+  text-align: center; 
+  color: #FEFEC0; 
+  font-size: 80px; 
+  font-family: Arial; 
+  font-weight: 700; 
+  letter-spacing: 16px; 
+  word-wrap: break-word;
+}
+.MyProject{
+  left: 872px; 
+  top: 965px; 
+  position: absolute; 
+  color: #FFAE00; 
+  font-size: 36px; 
+  font-family: Arial; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
+.Contact{
+  left: 1381px; 
+  top: 965px; 
+  position: absolute; 
+  color: #FFAE00; 
+  font-size: 36px; 
+  font-family: Arial; 
+  font-weight: 700; 
+  word-wrap: break-word;
+}
