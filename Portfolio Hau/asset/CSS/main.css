@@ -53,6 +53,9 @@ hr {
     display: flex;
     align-items: center;
     padding-top: 20px;
+    /* làm cho navbar luôn được giữ khi cuộn chuột */
+    /* position: fixed;
+    top: 0; */
 }
 
 .navbar ul {
@@ -133,9 +136,9 @@ hr {
     font-weight: 400;
 }
 
-.connect-btn:active,
-.join-btn:active {
-    opacity: 0.8;
+.connect-btn:hover,
+.join-btn:hover {
+    opacity: 0.7;
 }
 
 /*----------------------------------------------------------*/
@@ -240,7 +243,7 @@ hr {
 
 /* Numbers that speak for myself */
 .bg-office {
-    background-image: url(/asset/img/bg/service-manager-la-gi-cac-cong-viec-service-manager-phai-lam-1918.jpg);
+    background-image: url('../img/bg/service-manager-la-gi-cac-cong-viec-service-manager-phai-lam-1918.jpg');
     object-fit: center;
     height: 280px;
     margin-top: 100px;
@@ -257,12 +260,13 @@ hr {
     align-items: center;
     justify-content: center;
     height: 280px;
+    column-gap: 65px;
 }
 
 .display {
     display: flex;
     flex-direction: column;
-    margin: 0 20px;
+    /* margin: 0 30px; */
 }
 
 .number-box .number {
@@ -278,7 +282,7 @@ hr {
     /* color: #000; */
     font-family: "Poppins";
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     width: 200px;
     line-height: 25px;
 }
@@ -345,7 +349,7 @@ hr {
 /*----------------------------------------------------------*/
 /* Team Page */
 .team-page {
-    height: 100vh;
+    height: 110vh;
     background-color: #EFF2F8;
     max-width: 100%;
 }
@@ -442,7 +446,7 @@ hr {
 }
 
 .bg-extra {
-    background-image: url(/asset/img/bg/58411ef1-teamwork-skills-in-the-workplace.jpeg);
+    background-image: url("../img/bg/58411ef1-teamwork-skills-in-the-workplace.jpeg");
     width: 100%;
     height: 100%;
 }
@@ -542,14 +546,14 @@ input {
 .box-footer {
     background-color: #000;
     position: absolute;
-    height: 100px;
+    height: 110px;
     width: 100%;
     color: #fff;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 40px;
+    column-gap: 60px;
 }
 
 .footer-item {
@@ -565,10 +569,12 @@ input {
 }
 
 .temp {
-    width: 270px; 
+    width: 250px; 
+    margin-top: 10px;
     color: #817D7D; 
     font-family: "Poppins";
     font-size: 13px;
+    line-height: 17px;
 }
 
 .link-contact {
