@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ten" content="Duong Binh Loi" />
+    <meta name="file" content="Register2" />
+    <meta name="Diem" content="60" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Register2.css">
+    <title>Register2</title>
+    <script src="./main2.js"></script>
+  </head>
+  <body>
+    <h1 id="logo">Logo</h1>
+    <ul>
+      <li><a href="./Index-Home2.html">Home</a></li>
+      <li><a href="#Untilities">Untilities</a></li>
+      <li><a href="#Share">Share</a></li>
+      <li><a href="#Knowledge">Knowledge</a></li>
+      <li><a href="./Register.html" target="new">SignUp</a></li>
+      <li><a href="#SignIn">SignIn</a></li>
+      <li><a href="#About us">About us</a></li>
+    </ul>
+    <main>
+      <div class="item-title">
+        <h2>Register Form</h2>
+      </div>
+      <form class="form" action="./index.html" onsubmit=" return check()">
+        <div class="form-item">
+          <label>Login name: </label>
+          <input type="text" id="txtName" placeholder="Enter Login name" />
+        </div>
+        <div class="form-item">
+          <label>Email:</label>
+          <input type="email" placeholder="Enter email" id="txtMail" />
+        </div>
+        <div class="form-item">
+          <label>Password: </label>
+          <input type="password" id="txtPw" placeholder="Enter Password" />
+          <span id="showPw1" style="cursor: pointer">&#128586;</span>
+        </div>
+        <div class="form-item">
+          <label>Confirmed Password: </label>
+          <input type="password" id="txtCfPw" placeholder="Enter Password" />
+          <span id="showPw2" style="cursor: pointer">&#128586;</span>
+        </div>
+        <div>
+          <button class="register">Register</button>
+          <button style="margin-left: 0" type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+    <footer style="font-family: tahoma, sans-serif">
+      <span>&copy;</span> By me. All rights resersed
+    </footer>
+  </body>
+</html>

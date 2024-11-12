@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+}
+.header ul {
+  background-color: #0866FF;
+  display: flex;
+  padding: 15px 0; 
+  margin: 0;
+  justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+.header ul li a{
+  text-align: center;
+  font-family: Tahoma;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  font-size: xxx-large;
+  font-weight: 700;
+}
+.header ul li a:hover{
+  color: brown;
+}
+.middle{
+  display: flex;
+  justify-content: space-between;
+  background-color: #f3f3f3;
+}
+.portfolio{
+  margin: 10%;
+}
+.port{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  font-family:'Times New Roman', Times, serif;
+  color: #0866FF;
+  font-weight: 700;
+
+}
+.folio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 200px;
+  font-family:'Times New Roman', Times, serif;
+  color: #0866FF;
+  font-weight: 700;
+}
+.avatar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+}
+.avatar img{
+  width: 600px;
+  height: 600px;
+
+}
+.contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  background-color: #f3f3f3;
+  height: 50px;
+}
+a i {
+  font-size: 50px;
+  color: #333;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+a i:hover {
+  color: #0073e6;
+}
+/* Profile */
+.profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFEB;
+}
+.profile span {
+  font-size: 200px;
+  font-weight: 700;
+  
+}
+.profile img {
+  width: 200px;
+  height: 200px;
+}
+.introduce{
+  color: #000;
+  text-align: center;
+  font-family: Arial;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 1200px;
+}
+/* Project */
+.project{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #b3b3b3;
+}
+.project span {
+  font-size: 200px;
+  font-weight: 700;
+  color: #faf9ce;
+}
+.pj{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px;
+}
+.pj img {
+  width: 400px;
+  height: 400px;
+}

@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.searchhead{
+    display: flex;
+    align-items: center;
+}
+.searchhead input{
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+}
+form{
+    margin-bottom: 15%;
+}
+.signup {
+    display: flex;
+    justify-content: space-between;
+}
+.signup1 {
+    width: 40%;
+}
+.signup1 img {
+    width: 95%;
+    height: auto;
+    padding: 10%;
+}
+.signup2{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+.signup2 h2{
+    text-align: center;
+    margin-right: 20%;
+}
+.signup2 div{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.signup2 button {
+    padding: 10px;
+    background-color: lightgrey;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100px;
+}
+.signup2 div a {
+    margin-left: 0;
+    padding-bottom: 10px;
+}
+#logo{
+    font-size: 33pt;
+    font-family: Verdana;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px #f70;
+    color: white;
+    text-align: left;
+}
+ul{
+    background-color: orange;
+    padding:  15px 0;
+    margin: 0;
+    overflow: hidden;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+li a {
+    text-align: center;
+    font-family: Tahoma;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+li a:hover{
+    color: gray;
+}
+li {
+    float: left;
+    padding: 10px -20px;
+}
+input{
+    width: 400px;
+    height: 100%;
+    outline: none;
+    margin-right: 20%;    
+    font-size: 15px;
+}
+input:focus{
+    border: 1px solid rgb(0, 221, 255);
+    border-radius: 5px;
+}
+label {
+    text-align: right;
+    width: 250px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+button{
+    width: 20%;
+    margin-left: 31.5%;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px 5px;
+}
+button:focus{
+    border: 1px solid rgb(0, 221, 255);
+    border-radius: 5px;
+}

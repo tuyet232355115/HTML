@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="ten" content="Duong Binh Loi" />
+    <meta name="file" content="Home" />
+    <meta name="Diem" content="40" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home2</title>
+    <script>
+      const check = () => {
+        var sLogin = document.getElementById("txtLogin").value;
+        var reLogin = /^[a]{1}[p]{1}[t]{1}[e]{1}[c]{1}[h]{1}$/;
+        if (!reLogin.test(sLogin)) {
+          alert("Incorrect Account Name!");
+          document.getElementById("txtLogin").focus();
+          return false;
+        }
+        var sPw = document.getElementById("txtPw").value;
+        var rePw = /^[1]{1}[2]{1}[3]{1}$/;
+        if (!rePw.test(sPw)) {
+          alert("Incorrec Password!");
+          document.getElementById("txtPw").focus();
+          return false;
+        }
+        alert("Welcome Aptech, login Successfully!");
+      };
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      }
+      .searchhead {
+        display: flex;
+        align-items: center;
+      }
+      .searchhead input {
+        font-size: 14px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      form {
+        margin-bottom: 15%;
+      }
+      .signup {
+        display: flex;
+        justify-content: space-between;
+      }
+      .signup1 {
+        width: 40%;
+      }
+      .signup1 img {
+        width: 95%;
+        height: auto;
+        padding: 10%;
+      }
+      .signup2 {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+      }
+      .signup2 h2 {
+        text-align: center;
+        margin-right: 20%;
+      }
+      .signup2 div {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .signup2 button {
+        padding: 10px;
+        background-color: lightgrey;
+        color: white;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 100px;
+      }
+      .signup2 div a {
+        margin-left: 0;
+        padding-bottom: 10px;
+      }
+      #logo {
+        font-size: 33pt;
+        font-family: Verdana;
+        font-weight: bold;
+        text-shadow: 5px 5px 10px #f70;
+        color: white;
+        text-align: left;
+      }
+      ul {
+        background-color: orange;
+        padding: 15px 0;
+        margin: 0;
+        overflow: hidden;
+        list-style-type: none;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+      li a {
+        text-align: center;
+        font-family: Tahoma;
+        color: white;
+        text-decoration: none;
+        display: block;
+      }
+      li a:hover {
+        color: gray;
+      }
+      li {
+        float: left;
+        padding: 10px -20px;
+      }
+      input {
+        width: 400px;
+        height: 100%;
+        outline: none;
+        margin-right: 20%;
+        font-size: 15px;
+      }
+      input:focus {
+        border: 1px solid rgb(0, 221, 255);
+        border-radius: 5px;
+      }
+      label {
+        text-align: right;
+        width: 250px;
+        display: inline-block;
+        margin-bottom: 5px;
+        margin-right: 10px;
+      }
+      button {
+        width: 20%;
+        margin-left: 31.5%;
+        border: 0;
+        border-radius: 3px;
+        padding: 5px 5px;
+      }
+      button:focus {
+        border: 1px solid rgb(0, 221, 255);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">Logo</h1>
+      <div class="searchhead">
+        <label>Search: </label>
+        <input style="width: 300px" />
+      </div>
+    </header>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#Untilities">Untilities</a></li>
+      <li><a href="#Share">Share</a></li>
+      <li><a href="#Knowledge">Knowledge</a></li>
+      <li><a href="./Register2.html" target="new">SignUp</a></li>
+      <li><a href="#About us">About us</a></li>
+    </ul>
+    <form action="" onsubmit="return check()">
+      <div class="signup">
+        <div class="signup1">
+          <img src="./bgIndex.jpg" />
+        </div>
+        <div class="signup2">
+          <h2>SignIn Form</h2>
+          <hr style="width: 17%; margin-right: 51%; margin-bottom: 20px" />
+          <div>
+            <label>Login name:</label>
+            <input type="text" id="txtLogin" style="margin-right: 15%" />
+          </div>
+          <div>
+            <label>Password:</label>
+            <input type="password" id="txtPw" style="margin-right: 15%" />
+          </div>
+          <div style="margin-left: 25%">
+            <label style="width: 600px; text-align: right"
+              >Allready have an account?</label
+            ><a href="" style="color: blue; margin-right: 20%"> SignUp</a>
+          </div>
+          <button style="margin-left: 33.5%">SignIn</button>
+        </div>
+      </div>
+    </form>
+    <footer style="font-family: tahoma">
+      <span>&copy;</span> 2020 By me. All rights resersed
+    </footer>
+  </body>
+</html>

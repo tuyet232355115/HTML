@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+       body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       }
+       .container{
+            border: 1px solid black;
+            padding: 20px 20px 5px;
+            display: flex;
+            width: 1100px;
+            margin-top: 50px;
+       }  
+       .menu1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .tenmon {
+            font-size: 15px; 
+            text-align: center;
+            font-family: Tahoma;
+       }
+        .monnho1 {
+            padding: 5px;
+            height: 200px;  
+            width: 200px;   
+            object-fit: cover;
+       }
+       .monnho{
+            border: 1px solid lightcoral;
+            margin: 10px;
+       }
+       .monlon{
+            border: 1px solid lightcoral;
+            flex-direction: column;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            
+       }
+       .monlon1{
+            height: 635px;
+            width: 580px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+       }
+       .monlon2{
+        height:500px;
+        width: 500px;
+        margin-top: 100px;
+        margin-left: 40px;
+       }
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu1">
+            <div class="monnho">
+                <img src="./Picture/BB SQuid.jpg" alt="BB SQuid" class="monnho1">
+                <div class="tenmon">BB SQUID</div>
+            </div>
+            <div class="monnho"><img src="./Picture/Beef Steak.jpg" alt="Beef Steak" class="monnho1">
+                <div class="tenmon">Beef Steak</div>
+            </div>
+            <div class="monnho"><img src="./Picture/ChickenRice.jpg" alt="Chicken Rice" class="monnho1">
+                <div class="tenmon">ChickenRice</div>
+            </div>
+            <div class="monnho"><img src="./Picture/Crab.jpg" alt="Crab" class="monnho1">
+                <div class="tenmon">Crab</div>
+            </div>
+            <div class="monnho"><img src="./Picture/Seafood soup.jpg" alt="Seafood Soup" class="monnho1">
+                <div class="tenmon">Seafood Soup</div>
+            </div>
+            <div class="monnho"><img src="./Picture/IceDream.jpg" alt="Ice Dream" class="monnho1">
+                <div class="tenmon">Ice Cream</div>
+            </div>
+        </div>
+        <div class="monlon">
+            <div class="monlon1">
+                <img src="./Picture/Grilled Lobster.jpg" alt="" class="monlon2">
+            </div>
+            <div class="tenmon">Grilled Lobster</div>
+            <p class="tenmon">$2000</p>
+        </div>
+    </div>
+</body>
+</html>
