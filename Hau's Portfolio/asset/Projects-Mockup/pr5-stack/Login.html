@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Stack</title>
+    <style>
+        * {
+            font-family: Verdana;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            background-color: #000000;
+        }
+
+        img {
+            margin-top: 12px;
+            margin-left: 40px;
+            margin-right: 15px;
+            width: 50px;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 30px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .space-empty {
+            flex: 1;
+        }
+
+        div a {
+            margin-right: 40px;
+            width: 100px;
+            float: left;
+            padding-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            height: 50px;
+            text-align: center;
+        }
+     
+        .hover:hover {
+            background-color: rgb(100,100,100);
+        }
+
+        .button-LogIn {
+            background-color: orangered;
+            border: none;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: -5px;
+            width: 115px;
+            cursor: pointer;
+        }
+        .button-LogIn:hover {
+            background-color: rgb(243, 98, 46);
+        }
+
+        .button-signUp {
+            background-color: #000;
+            border: 1px solid rgb(100,100,100);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: -5px;
+            width: 115px;
+            cursor: pointer;
+        }
+        .button-signUp:hover {
+            background-color: rgb(55,55,55);
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .pic-1 {
+            width: 88%;
+            height: 480px;
+            margin-top: 10px;
+            margin-left: 10px;
+            object-fit: center;
+        }
+
+        .pic-2 {
+            width: 115%;
+            height: 480px;
+            margin-top: 10px;
+            margin-left: -80px;
+            object-fit: center;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: -10px;
+            margin-left: 500px;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        const login = () => {            
+            var reAccount = /^\w+\d$/
+            if (!reAccount.test(prompt("Name account: ", ""))) {
+                alert("Your account is invalid!");
+                return login();
+            }
+    
+            var rePassword = /^{8,12}$/
+            if (!rePassword.test(prompt("Password: ", ""))) {
+                alert("Password must from 8 to 12 digits/character!");
+            }
+        }
+          
+       
+    </script>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo">
+            <img src="./img/images (1).png" alt="">
+        </div>
+        <div class="logo" style="margin-top: 13px;">
+            Stack
+        </div>
+        <div class="space-empty"></div>
+        <div class="main">
+            <a href="./Login.html" class="hover">Home</a>
+            <a href="" class="hover">Page</a>
+            <a href="" class="hover">Contact</a>
+            <a href="">
+                <button class="button-LogIn" onclick="return login()">LOG IN</button>
+            </a>
+            <a href="./SignUp.html">
+                <button class="button-signUp">SIGN UP</button>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div>
+                <img class="pic-1" src="./img/ecommerce-site-development.jpg" alt="">
+            </div>
+            <div>
+                <img class="pic-2" src="./img/img1 (1).jpg.crdownload" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <center>
+            <p class="footer">Copyright &copy; 2018 By ABC Group</p>
+        </center>
+    </footer>
+</body>
+</html>

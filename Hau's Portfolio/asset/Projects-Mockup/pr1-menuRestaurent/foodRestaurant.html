@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Restaurant</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <style>
+            * {
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            }
+
+        header p {
+            font-family: "Lora";
+            font-size: 40px;
+            color: rgb(150,150,150);
+            border: solid 5px rgba(121, 125, 106, 0.272);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            width: 400px;
+            margin-bottom: 15px;
+        }
+
+        .a-style, .z-style {
+            color: rgb(196, 165, 106);
+        }
+
+        .block-more {
+            margin-left: -90px;
+        }
+
+        .more {
+            font-weight: bold;
+        }
+
+        .block-food {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 150px;
+        }
+
+        .food-img {
+            width: 100%;
+            object-fit: center;
+        }
+
+        .food-1, .food-2, .food-3 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p class="header">From <span class="a-style">A</span> to <span class="z-style">Z</span>ucchini</p>
+    </header>
+    <main>
+        <section>
+            <img src="./chocolate-islands.jpg" alt="chocolate-islands">
+            <p>
+                This recipe for individual chocolate cakes is so simple and so delectable!
+            </p>
+        </section>
+        <section>
+            <div class="block-more">
+                <p class="more">More Recipes:</p>
+            </div>
+            <div class="block-food">
+                <div class="food-img"><img class="food-1" src="./download.jfif" alt=""></div>
+                <div class="food-img"><img class="food-2" src="./images (1).jfif" alt=""></div>
+                <div class="food-img"><img class="food-3" src="./images.jfif" alt=""></div>
+            </div>
+            
+            
+        </section>
+    </main>
+
+</body>
+</html>
