@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Follow</title>
+    <style>
+        .border {
+            width: 60%;
+            border: thin solid #fff; 
+            box-shadow: 1px 2px 5px lightgray;
+            margin-top: 100px;
+        }
+
+        .khung {
+            width: 550px;
+            margin-left: 100px;
+            display: grid;
+            grid-template-columns: 100px 200px 200px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            display: inline-block;
+            object-fit: center;
+        }
+
+        .info {
+            margin-left: 16px;
+            display: inline-block;          
+        }
+
+        .p-1 {
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 23px;
+            margin-top: 2px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .p-2 {
+            font-family: Arial;
+            color: rgb(100, 100, 100);
+            font-size: 20px;
+            margin-top: -13px;
+            text-align: left;
+        }
+
+        .button-follow {
+            background-color: #fff;
+            color: rgb(8, 102, 255);
+            border: 2px solid rgb(8, 102, 255);
+            border-radius: 6px;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 20px;
+            width: 110px;
+            padding: 10px 15px;
+            margin-top: 32px;
+            margin-left: 70px;
+            cursor: pointer;
+        }
+        .button-follow:hover {
+            background-color: rgb(8, 102, 255);
+            color: #fff;
+        }
+        .button-follow:active {
+            box-shadow: 1px 2px 15px lightgray;
+        }
+
+        .top {
+            margin-top: -60px;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <!--Mai Trung Hậu -->
+        <div class="border">
+            <div class="khung">
+                <div>
+                    <img src="./img/maaitlunghau.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p class="p-1">Mai Trung Hậu</p>
+                    <p class="p-2">Leader</p>
+                    <p class="p-2">Friendly</p>
+                </div>
+                <div>
+                    <button class="button-follow">Follow</button>
+                </div>
+            </div>
+        </div>
+        <!--maaitlunghau-->
+        <div class="top">
+            <div class="border">
+                <div class="khung">
+                    <div>
+                        <img src="./img/445550289_441752068578970_5257425400559819580_n.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="p-1">maaitlunghau</p>
+                        <p class="p-2">Developer Web</p>
+                        <p class="p-2">Happines</p>
+                    </div>
+                    <div>
+                        <button class="button-follow">Follow</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </center>
+
+</body>
+
+</html>

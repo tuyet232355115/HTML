@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Stack</title>
+    <style>
+        * {
+            font-family: Verdana;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: row;
+            background-color: #000000;
+        }
+
+        img {
+            margin-top: 12px;
+            margin-left: 40px;
+            margin-right: 15px;
+            width: 50px;
+        }
+
+        .logo {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 30px;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .space-empty {
+            flex: 1;
+        }
+
+        div a {
+            margin-right: 40px;
+            width: 100px;
+            float: left;
+            padding-top: 20px;
+            color: #fff;
+            text-decoration: none;
+            height: 50px;
+            text-align: center;
+        }
+
+        .hover:hover {
+            background-color: rgb(100, 100, 100);
+        }
+
+        .button-LogIn {
+            background-color: orangered;
+            border: none;
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: -5px;
+            width: 115px;
+            cursor: pointer;
+        }
+
+        .button-LogIn:hover {
+            background-color: rgb(243, 98, 46);
+        }
+
+        .button-signUp {
+            background-color: #000;
+            border: 1px solid rgb(100, 100, 100);
+            color: #fff;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: -5px;
+            width: 115px;
+            cursor: pointer;
+        }
+
+        .button-signUp:hover {
+            background-color: rgb(55, 55, 55);
+        }
+
+        /* form */
+        .background {
+            background-image: url(./img/footer-4.jpg);
+            padding-top: 20px;
+            height: 800px;
+        }
+
+        form {
+            width: 500px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            padding-left: 60px;
+            padding-bottom: 30px;
+        }
+
+        .info {
+            margin-top: 0px;
+            margin-left: -300px;
+            color: orangered;
+            font-size: 20px
+        }
+
+        .profile {
+            margin-top: 40px;
+            margin-left: -330px;
+            color: orangered;
+            font-size: 20px
+        }
+
+        .name-email {
+            margin-left: -380px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .password {
+            margin-left: -340px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #fff;
+        }
+
+        .age {
+            margin-left: -390px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .radio-1, .radio-2 {
+            color: #fff;
+        }
+
+        .flex-radio {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bio {
+            margin-left: -340px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .proper-name {
+            margin-left: -360px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 350px;
+            margin-left: 30px;
+        }
+
+        .button-signUp-extra {
+            width: 350px;
+            margin-left: 35px;
+            margin-top: 40px;
+            padding: 13px 30px;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            /* background-color: #11d34e; */
+            background-color: orangered;
+            cursor: pointer;
+        }
+
+        .button-signUp-extra:hover {
+            background-color: orange;
+        }
+
+        option {
+            margin-left: 20px;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: -280px;
+            margin-left: 500px;
+            font-weight: bold;
+        }
+
+        .black {
+            background-color: #000;
+            height: 1000px;
+        }
+
+        .grid-footer {
+            display: grid;
+            grid-template-columns: 100px 1fr 1fr 100px ;
+        }
+
+        .space-empty-extra {
+            width: 100px;
+        }
+
+        .quote {
+            text-align: left;
+            width: 360px;
+            font-size: 30px;
+            line-height: 45px;
+            color: #fdfdfd;
+            font-weight: bold;
+            margin-left: 130px;
+            margin-bottom: 0;
+        }
+
+        .img-success {
+            width: 400px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .button-extra {
+            font-size: 30px;
+            margin-left: 90px;
+            padding: 8px 25px;
+            border-radius: 25px;
+            border: none;
+            background-color: orangered;
+            margin-top: -50px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        const checkError = () => {
+
+        }
+    </script>
+</head>
+
+<body style="padding-bottom: 500px;">
+    <div class="menu">
+        <div class="logo">
+            <img src="./img/images (1).png" alt="">
+        </div>
+        <div class="logo" style="margin-top: 13px;">
+            Stack
+        </div>
+        <div class="space-empty"></div>
+        <div class="main">
+            <a href="./Login.html" class="hover">Home</a>
+            <a href="" class="hover">Page</a>
+            <a href="" class="hover">Contact</a>
+            <a href="">
+                <button class="button-LogIn">LOG IN</button>
+            </a>
+            <a href="./SignUp.html">
+                <button class="button-signUp">SIGN UP</button>
+            </a>
+        </div>
+    </div>
+    <main>
+        <div class="background">
+            <center>
+                <form action="" onsubmit="return checkError()">
+                    <h2 style="color: #fff; font-weight: 500; font-size: 35px; margin-left: -80px; font-weight: bold;">Sign Up</h2>
+                    <p class="info">Your basic info</p>
+                    <span class="name-email">Name:</span> <input type="text" autofocus>
+                    <span class="name-email">Email:</span> <input type="email">
+                    <span class="password">Password:</span> <input type="password">
+                    <span class="age">Age:</span>
+                    <div class="flex-radio">
+                        <div>
+                            <input type="radio" name="age" style="margin-left: -340px;"> <span class="radio-1">Under 18</span>
+                        </div>
+                        <div>
+                            <input type="radio" name="age" style="margin-left: -326px;"> <span class="radio-2">18 or
+                                older</span>
+                        </div>
+                    </div>
+                    <p class="profile">Your profile</p>
+                    <span class="bio">Biography:</span>
+                    <textarea style="width: 350px; margin-left: 30px;" placeholder="Something..."></textarea>
+                    <span class="proper-name">Job Role:</span>
+                    <select style="width: 355px; margin-left: 30px;">
+                        <optgroup label="Web">Web
+                            <option>Front-End Developer</option>
+                            <option>PHP Developer</option>
+                            <option>Python Developer</option>
+                            <option>Rails Developer</option>
+                            <option>Web Designer</option>
+                            <option>WordPress Developer</option>
+                        </optgroup>
+                        <optgroup label="Mobile">Mobile
+                            <option value="">Androild Developer</option>
+                            <option value="">IOS Developer</option>
+                            <option value="">Mobile Developer</option>
+                        </optgroup>
+                        <optgroup label="Business">Business
+                            <option value="">Business Owner</option>
+                            <option value="">Freelancer</option>
+                        </optgroup>
+                        <optgroup label="Other">Other
+                            <option value="">Secretart</option>
+                            <option value="">Maintenance</option>
+                        </optgroup>
+                    </select>
+                    <button class="button-signUp-extra">Sign Up</button>
+                </form>
+                <hr style="width: 80%; margin-top: 20px;">
+            </center>
+        </div>
+
+        <!--extra-->
+        <div class="black">
+            <div class="grid-footer">
+                <div class="space-empty-extra"></div>
+                <div class="quote">
+                    <p>Don’t chase after others. Be yourself. Work hard on your goals. The results will come to you!</p>
+                    <a href="./Login.html">
+                        <button class="button-extra">Stack</button>
+                    </a>
+                </div>
+                <div>
+                    <img class="img-success" src="./img/depositphotos_186191044-stock-photo-man-silhouette-on-the-mountain.jpg" alt="">
+                </div>
+                <div class="space-empty-extra"></div>
+            </div>
+            <hr style="width: 80%; margin-top: 30px;margin-bottom: 20px;">
+            <div class="logo">
+                <img src="./img/images (1).png" alt="">
+            </div>
+            <div class="logo" style="margin-top: 13px;">
+                Stack
+            </div>
+        </div>
+    </main>
+    <!-- <footer>
+        <center>
+            <p class="footer">Copyright &copy; 2018 By ABC Group</p>
+        </center>
+    </footer> -->
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motrenhix</title>
+    <style>
+        .border {
+            /* width: 1280px; */
+            width: 100%;
+            /* width: 1200px; */
+            height: 100vh;
+            position: relative;
+        }
+
+        .border:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0, 0.7);
+        }
+
+        .background {
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+        }
+
+        .menu {
+            display: grid;
+            height: 50px;
+            grid-template-columns: 300px 300px 200px 200px;
+            margin-left: 80px;
+            padding-top: 20px;
+        }
+
+        #logo {
+            color: #ff5900;
+            font-weight: 1000;
+            font-family: Arial;
+            font-size: 30px;
+            position: absolute;
+            padding: 5px;
+            width: 300px;
+            text-align: center;
+            border: none;
+            border-radius: 15px;
+            letter-spacing: 5px;
+            text-shadow: 5px 20px 50px #ff5900;
+            cursor: pointer;
+        }
+
+        .space {
+            background-color: none;
+            width: 300px;
+            position: relative;
+            /* top: 50px; */
+            left: 300px;
+        }
+
+
+        .button-SignIn {
+            position: relative;
+            left: 500px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: none;
+            width: 125px;
+            color: #ff5900;
+            height: 30px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border: 1.5px solid #ff5900;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        .button-dangKy {
+            position: relative;
+            left: 340px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 18px;
+            background-color: #ff5900;
+            width: 125px;
+            color: #fff;
+            height: 32px;
+            margin-top: 10px;
+            padding-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .button-dangKy:hover {
+            background-color: rgb(150, 150, 150);
+            opacity: 0.8;
+        }
+
+        .button-dangKy:active {
+            background-color: rgb(150, 150, 150);
+            opacity: 0.7;
+        }
+
+        .button-SignIn:hover {
+            color: #fff;
+            background-color: #ff5900;
+            border: none;
+        }
+
+        .block-h1 {
+            width: 800px;
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .p-1 {
+            color: #FDFDFD;
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 50px;
+            margin-top: 20px;
+            margin-left: 80px;
+        }
+
+        .p-2 {
+            color: #FDFDFD;
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 50px;
+            margin-top: -40px;
+            margin-left: 40px;
+            width: 860px;
+        }
+
+        .p-3 {
+            color: #FDFDFD;
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 50px;
+            margin-top: -40px;
+            margin-left: 150px;
+        }
+
+        .p-4 {
+            color: #FDFDFD;
+            font-family: Arial;
+            font-weight: bolder;
+            font-size: 45px;
+            margin-top: -40px;
+            margin-left: 320px;
+        }
+
+        .extra-block {
+            width: 60%;
+            height: 200px;
+            position: relative;
+            margin-left: 250px;
+            margin-top: -210px
+        }
+
+        .question {
+            color: rgb(150, 150, 150);
+            font-family: Arial;
+            font-size: 18px;
+            text-align: center;
+            width: 700px;
+            text-decoration: underline;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .question:hover {
+            color: #FDFDFD;
+        }
+
+        .solution {
+            color: rgb(150, 150, 150);
+            font-family: Arial;
+            font-size: 18px;
+            text-align: center;
+            margin-top: -50px;
+            width: 700px;
+            display: inline-block;
+        }
+
+        input {
+            background-color: black;
+        }
+
+        .email {
+            font-size: 20px;
+            background-color: none;
+            width: 380px;
+            height: 35px;
+            padding: 12px 0px 12px 10px;
+            margin-top: -5px;
+            border-radius: 5px;
+            border: 1.5px solid #ff5900;
+            color: #FDFDFD;
+        }
+
+        .button-start {
+            font-family: Arial;
+            font-size: 20px;
+            padding: 13px 15px;
+            width: 170px;
+            height: 62px;
+            border-radius: 5px;
+            border: none;
+            margin-left: 10px;
+            color: #FDFDFD;
+            background-color: #ff5900;
+            cursor: pointer;
+        }
+
+        .button-start:active {
+            background-color: rgb(100, 100, 100);
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="border">
+        <img class="background" src="./img/pngtree-wall-of-movie-posters-on-display-picture-image_3620105.jpg">
+        <div class="menu">
+            <div id="logo">MOTRENHIX</div>
+            <div class="space"></div>
+            <a href="./sign-in.html">
+                <div class="button-SignIn">Đăng nhập</div>
+            </a>
+            <a href="./Dang-Ky.html">
+                <div class="button-dangKy">Đăng ký</div>
+            </a>
+        </div>
+        <div class="block-h1">
+            <p class="p-1">
+                Chương trình truyền hình,
+            </p>
+            <p class="p-2">
+                những bộ phim có doanh thu
+            </p>
+            <p class="p-3">
+                cao nhất trong năm
+            </p>
+            <p class="p-4">
+                2019
+            </p>
+        </div>
+        <div class="extra-block">
+            <a href="./Dang-Ky.html">
+                <p class="question">Bạn chưa có tài khoản?</p>
+            </a>
+            <p class="solution">Nhập email để tạo hoặc kích hoạt lại tư cách thành viên của bạn.</p>
+            <center>
+                <form action="./test-2.html">
+                    <input class="email" type="email" placeholder="Địa chỉ email" required>
+                    <button class="button-start">Bắt đầu</button>
+                </form>
+            </center>
+        </div>
+
+</body>
+
+</html>
